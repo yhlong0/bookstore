@@ -1,7 +1,7 @@
 var express = require('express');
 
 var app = express();
-var port = 3000;
+var port = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 
@@ -20,6 +20,6 @@ app.get('/authors', function(req, res){
 });
 
 app.listen(port, function(err){
-	console.log('running /.....' + port);
+	console.log('Running ..... at Port: ' + port);
 });
 
