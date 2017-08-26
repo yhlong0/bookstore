@@ -2,14 +2,15 @@ var passport = require('passport'),
 	LocalStrategy = require('passport-local').Strategy;
 
 module.exports = function() {
-	passport.use(new LocalStrategy(function(username, password, done) {
+	passport.use(new LocalStrategy( {
+		usernameField: 'userName',
+		passwordField: 'password'
+	},
+	function(username, password, done) {
 		var user = {
 			username: username,
 			password: password
 		};
 		done(null, user);
-	}, {
-		usernameField: 'userName',
-		passwordField: 'password'
 	})); 
 };
