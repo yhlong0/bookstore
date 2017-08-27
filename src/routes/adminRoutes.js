@@ -7,30 +7,35 @@ var books = [
 			title: 'Hello1',
 			genre: 'Fiction',
 			author: 'William',
+			bookId: 656,
 			read: false
 		},
 		{
 			title: 'Hello2',
 			genre: 'Fiction2',
 			author: 'William2',
+			bookId: 24280,
 			read: false
 		},
 		{
 			title: 'Hello3',
 			genre: 'Fiction3',
 			author: 'William3',
+			bookId: 123,
 			read: false
 		},
 		{
 			title: 'Hello4',
 			genre: 'Fiction4',
 			author: 'William4',
+			bookId: 520,
 			read: false
 		},
 		{
 			title: 'Hello5',
 			genre: 'Fiction5',
 			author: 'William5',
+			bookId: 323,
 			read: false
 		}
 	];
